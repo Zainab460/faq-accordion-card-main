@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mouse+Memoirs&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.contain {
+  justify-content: center;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background-color: white;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 3260% 66%;
+  box-shadow: 0 1px 2px 0 hsl(273, 75%, 66%), 0 2px 60px 2px hsl(240, 73%, 65%);
+  border-radius: 25px;
+  height: 500px;
+  width: 950px;
+}
+.grid-item {
+  position: relative;
+}
+
+.picture {
+  background-image: url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position:120%  center;
+  height: 100%;
+  
+}
+.cube {
+  position: absolute;
+  right: 320px;
+  top: 200px;
+}
+
+/* Frequetly Ask Questions Sections */
+.faq {
+  margin-left: 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+ 
+}
+.faq h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 30px 0px;
+}
+.q-section {
+  
+  cursor: pointer;
+}
+.arrow {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  color: hsl(240, 6%, 50%);
+  font-size: 13px;
+  font-weight: 400;
+  color: hsl(238, 29%, 16%);
+}
+.quest {
+  margin-bottom: 10px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: 10px;
+}
+
+.questions:hover {
+  color: hsl(14, 88%, 65%);
+}
